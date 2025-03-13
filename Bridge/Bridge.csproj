@@ -4,6 +4,9 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <BaseOutputPath>C:\Users\saram\source\repos\Bridge\Bridge\bin\Release\net8.0\publish</BaseOutputPath>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <DocumentationFile>C:\Users\saram\source\repos\Bridge\Bridge\bin\Release\net8.0\publish\Ny Tekstdokument.txt</DocumentationFile>
   </PropertyGroup>
 
 </Project>

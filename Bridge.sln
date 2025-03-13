@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35825.156 d17.13
+VisualStudioVersion = 17.13.35825.156
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge", "Bridge\Bridge.csproj", "{A5BF8F02-6999-4A37-977E-8327AE978723}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BridgeTests", "BridgeTests\BridgeTests.csproj", "{25438E89-E138-4A17-AFFC-3A9554C4FECC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreBaeltTicketLibrary", "StoreBaeltTicketLibrary\StoreBaeltTicketLibrary.csproj", "{F8731465-5914-43CD-88DF-36833B6D999C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oresundbron", "Oresundbron\Oresundbron.csproj", "{C7B2E85D-B667-4B96-A6A0-36296D680A69}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{25438E89-E138-4A17-AFFC-3A9554C4FECC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{25438E89-E138-4A17-AFFC-3A9554C4FECC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{25438E89-E138-4A17-AFFC-3A9554C4FECC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8731465-5914-43CD-88DF-36833B6D999C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8731465-5914-43CD-88DF-36833B6D999C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8731465-5914-43CD-88DF-36833B6D999C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8731465-5914-43CD-88DF-36833B6D999C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7B2E85D-B667-4B96-A6A0-36296D680A69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7B2E85D-B667-4B96-A6A0-36296D680A69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7B2E85D-B667-4B96-A6A0-36296D680A69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7B2E85D-B667-4B96-A6A0-36296D680A69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

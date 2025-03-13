@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bridge</name>
+    </assembly>
+    <members>
+        <member name="M:Bridge.Car.Price">
+            <summary>
+            Her returnere jeg prisen af bilen
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bridge.Car.VehicleType">
+            <summary>
+            Her returnere jeg typen af bilen
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bridge.MC.Price">
+            <summary>
+            Her returneres prisen af MC'en
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bridge.MC.VehicleType">
+            <summary>
+            Her returneres "MC"
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -8,6 +8,7 @@ namespace Bridge
 {
     public class MC : Vehicle
     {
+        public bool Brobizz { get; set; }
         public MC(string licensePlate, DateTime date) : base(licensePlate, date)
         {
             if (LicensePlate.Length > 7)
@@ -22,7 +23,15 @@ namespace Bridge
          /// <returns></returns>
         public override double Price()
         {
-            return 120;
+            double price  = 120;
+
+            if (Brobizz)
+            {
+                price *= 0.9;
+
+            }
+
+            return price;
         }
 
         /// <summary>

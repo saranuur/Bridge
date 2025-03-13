@@ -4,6 +4,7 @@ namespace Bridge
 {
     public class Car : Vehicle
     {
+        public bool Brobizz { get; set; }
         public Car(string licensePlate, DateTime date) : base(licensePlate, date)
         {
             if (LicensePlate.Length > 7)
@@ -19,14 +20,25 @@ namespace Bridge
         /// <returns></returns>
         public override double Price()
         {
-            return 230;
+            double price = 230;
+
+            if (Brobizz)
+            {
+                price *= 0.9;
+            }
+
+            return price;
+
         }
 
-        /// <summary>
-        /// Her returnere jeg typen af bilen
-        /// </summary>
-        /// <returns></returns>
-        public override string VehicleType()
+
+
+
+/// <summary>
+/// Her returnere jeg typen af bilen
+/// </summary>
+/// <returns></returns>
+public override string VehicleType()
         {
             return "Car"; 
         }

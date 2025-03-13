@@ -2,16 +2,14 @@
 
 namespace Bridge
 {
-    public class Car
+    public class Car : Vehicle
     {
-        public string LicensePlate { get; set; }
-        public DateTime Date { get; set; }
-
-
-        public Car( string licensePlate, DateTime date)
+        public Car(string licensePlate, DateTime date) : base(licensePlate, date)
         {
-            LicensePlate = licensePlate;
-            Date = date;
+            if (LicensePlate.Length > 7)
+            {
+                throw new Exception("Licenseplate is too long");
+            }
 
         }
 
@@ -19,7 +17,7 @@ namespace Bridge
         /// Her returnere jeg prisen af bilen
         /// </summary>
         /// <returns></returns>
-        public double Price()
+        public override double Price()
         {
             return 230;
         }
@@ -28,7 +26,7 @@ namespace Bridge
         /// Her returnere jeg typen af bilen
         /// </summary>
         /// <returns></returns>
-        public string VehicleType()
+        public override string VehicleType()
         {
             return "Car"; 
         }

@@ -11,6 +11,12 @@ namespace Bridge.Tests
     [TestClass()]
     public class CarTests
     {
+        [TestMethod()]
+        public void LicensePlateTooLong()
+        {
+            var car = new Car("Dk7629", DateTime.Now);
+
+        }
         
         [TestMethod()]
         public void PriceTest()

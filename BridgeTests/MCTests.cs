@@ -8,9 +8,17 @@ using System.Threading.Tasks;
 
 namespace Bridge.Tests
 {
+
     [TestClass()]
     public class MCTests
     {
+        [TestMethod()]
+        public void LicensePlateTooLong()
+        {
+            var mc = new MC("Dk7629", DateTime.Now);
+
+        }
+
         [TestMethod()]
         public void PriceTest()
         {

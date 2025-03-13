@@ -6,22 +6,21 @@ using System.Threading.Tasks;
 
 namespace Bridge
 {
-    public class MC
+    public class MC : Vehicle
     {
-        public string LicensePlate { get; set; }
-        public DateTime Date { get; set; }
-
-        public MC( string licensePlate, DateTime date)
+        public MC(string licensePlate, DateTime date) : base(licensePlate, date)
         {
-            LicensePlate = licensePlate;
-            Date = Date;
+            if (LicensePlate.Length > 7)
+            {
+                throw new Exception("Licenseplate is too long");
+            }
 
         }
          /// <summary>
          /// Her returneres prisen af MC'en
          /// </summary>
          /// <returns></returns>
-        public double Price()
+        public override double Price()
         {
             return 120;
         }
@@ -30,7 +29,7 @@ namespace Bridge
         /// Her returneres "MC"
         /// </summary>
         /// <returns></returns>
-        public string VehicleType()
+        public override string VehicleType()
         {
             return "MC";
         }
